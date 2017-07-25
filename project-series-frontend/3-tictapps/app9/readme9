@@ -1,0 +1,7 @@
+simple step, taken all the objects and put them in their own files.
+
+|- app.html
+|- controler.js
+|- initialize.js
+|- model.js
+|- view.js

@@ -1,0 +1,26 @@
+ticTappToe:  object
+	properties:
+		nextPlayer:  boolean
+			initialized:  true
+			purpose:  to keep track of who's turn it is
+		boardState:  array of arrays
+			initialized:  3x3, populated with nulls
+			purpose:  to store the state of the board
+	methods:
+		play:
+			args:  box. a cell from your DOM board
+			return:  undefined
+			behavior:  to call updateData then populateBoard
+			purpose:  provides a predescribed user interaction with the data - add a new move and see the new data
+		updateData:
+			args:  box. a cell from your DOM board
+			return:  undefined
+			behavior:  if it's a valid move - to place the new move in the db(array) and change player.  else alert. 
+			purpose:  to allow the user to change the app's data
+		populateBoard:
+			args:  none
+			return:  undefined 
+			behavior:  to draw the boardState into the DOM
+			purpose:  so users can see their moves		
+	purpose:
+		this ticTappToe exists to bundle everything together and to protect the global scope

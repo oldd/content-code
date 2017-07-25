@@ -1,0 +1,23 @@
+two views! 
+remember how the body is our frontend and the head our backend?
+
+well, browsers start empty so it makes sense for us to have to build the board when we first initialize the app.  
+from then on, it's a matter of repopulating the board
+
+everytime the user makes a move, the 'front end' sends a request to the 
+'back end'.  the 'back end' manipulates the model and redraws the 'front end'.
+- client/server relationship
+
+|- models/
+|	|- boardModel.js
+|	|- playerModel.js
+|- resources/
+|	|- tictactoe.css
+|- views/
+|	|- gameplayView.js
+|	|- initializeView.js
+|- app.html
+|- controler.js
+|- initialize.js
+|- view.js
+

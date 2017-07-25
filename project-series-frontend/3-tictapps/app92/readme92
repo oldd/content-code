@@ -1,0 +1,16 @@
+let's get our css out of the way, its not central to the app working.
+
+and pretty soon we'll have two views, so let's prepare for that
+
+|- models/
+|	|- boardModel.js
+|	|- playerModel.js
+|- resources/
+|	|- tictactoe.css
+|- views/
+|	|- view.js
+|- app.html
+|- controler.js
+|- initialize.js
+|- view.js
+

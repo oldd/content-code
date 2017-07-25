@@ -1,0 +1,35 @@
+nextPlayer:  boolean
+	initialized:  true
+	purpose:  keep track of who's turn it is
+
+boardState:  array of arrays
+	initialized:  3x3, all null
+	purpose:  store the state of the game
+
+play:  function
+	args:  box - DOM element.  cell in the board
+	return:   udefined
+	behavior:  calls updateData with box, calls populateBoard
+	purpose:  allows a user to place a new move and see the result
+
+updateData:  function
+	args:  box - DOM element.  cell in the board
+	return:  undefined
+	behavior:  check if the given cell is null.  if it is, place the move and switch to next player.  else, alert.  
+	purpose:  keep data up to date with game play
+
+populateBoard:  function
+	args:  none
+	return:  undefined
+	behavior:  draw boardState onto the DOM table
+	purpose:  so users can see the moves they've made
+
+
+
+
+
+schemaSpec:  function
+	args:  what's in the parenthesis
+	return:  what's on the right hand of the return statement
+	behavior:  what happens between the curly braces
+	purpose:  how does this relate to the user and the data.  whay does it exist?

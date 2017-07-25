@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<!-- import all dependencies -->
+
+		<!-- initializing script -->
+		<script src="initialize.js"></script>
+		
+		<!-- models -->
+		<script src="models/boardModel.js"></script>
+		<script src="models/playerModel.js"></script>
+		
+		<!-- views -->
+		<script src="views/initializeView.js"></script>
+		<script src="views/gameplayView.js"></script>
+		
+		<!-- controller -->
+		<script src="controller.js"></script>
+		
+		<!-- style resources -->
+		<link rel="stylesheet" type="text/css" href="resources/tictactoe.css">
+		
+		<!-- run initializing script when all resources are loaded -->
+		<script>
+			window.addEventListener('DOMContentLoaded', function() {
+				initialize();
+			});
+		</script>	
+	</head>
+	<body>
+		<table id='ticTacBoard'></table>
+	</body>
+</html>
+
+

@@ -1,0 +1,19 @@
+nextPlayer:  boolean
+	initialized:  true
+	purpose:  remember who's turn it is
+
+boardState:  array of arrays
+	initialized:  3x3, all nulls
+	purpose:  store the current game
+
+play:  function
+	args:  box - DOM object.
+	return:  undefined
+	behavior:  determine if DOM element is null. if it is empty, play that player's move. else alert. advance to next player
+	purpose:  it allows players to play
+
+populateBoard: function
+	args:  none
+	return:  undefined
+	behavior:  writes the boardState into the DOM table (game board)  
+	purpose:  so players can see where they've played 
