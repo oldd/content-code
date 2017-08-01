@@ -1,0 +1,76 @@
+all content that is code to study and replicate goes in this repo  
+  
+to be linked to by the book   
+and md's as necessary
+
+-------------------------------------------- 
+
+fe code
+	exercises
+	objects
+	my-first-repo
+	tictapptoe series
+	cleancalc -> terminal, browser
+	battleship
+	*book
+	adv-js/classes
+	callbacks
+	front-end twitter
+		modules
+		predone webpack
+		wo/classes & w/classes
+		superficial promises
+		async api calls
+		babel
+
+express code
+	cleancalc -> mid, ejs, api
+	simple/static/museum -> html, fs, ftp (?)
+	tictacbackend -> ejs-boardbuilder
+	simple/middleware
+	simple/recap
+	translation app?
+	crudrest/beaver3&4
+	debug-these
+	crudrest/buildups/beaver&calcs 
+		-> assigned as review in week 2?
+	beavers-mvc-muber - laurensly
+	sessions only
+	environmental variables
+	auths/simple,session,jwt
+	send-types
+	adv-js/closures
+	functional-programming
+	a project to read	
+		services-architecture
+		local moduling 
+	a project to read
+		api-based
+
+cleancalc
+		terminal
+		browser
+		middleware
+		ejs
+		api
+
+adv-stuff
+	prototype - inheritance slim
+	underscore examples?
+	simple-underscore-app
+	a fancy project with it all
+	more axios
+	more promises
+	jsx
+	es6
+	functional+ - pedrostuff
+	immutable data
+	design patterns - link to THE link in md?
+
+react
+	whatevs for now
+
+
+
+
+
