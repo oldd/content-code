@@ -1,1 +1,0 @@
-concepts, skills, tools, deliverables
