@@ -1,0 +1,1 @@
+exercises for Week 1
