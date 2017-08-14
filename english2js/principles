@@ -1,0 +1,34 @@
+Listed below are some good tricks to keep in mind when approaching a coding problem:
+
+1) Rephrase the question until it looks like a function description:
+	Arguments, Return Value, Behavior.
+
+2) Break the problem into pieces you DO know how to code. Think of your solution as stringing more than one smaller solutions one after the other.
+	This will make debugging and code re-use easier.
+
+3) Save every attempt you make, and save every step of every attempt.
+	This will help you understand your strengths and weaknesses as well as making it easier for you to 'reset' if you go down a wrong path.
+	For problems that you find difficult, create a series of js files like the demoSteps in this directory.  In solving difficult problems you learn the most, this procedure will help you document what you learned for later study.
+
+4) Work from a sample of simulated input/output pairs whenever possible.
+	Choosing the BEST examples is a real skill we'll be talking more about through this program. For now just choose some simple ones that come to mind.
+
+5) Fall back on things that work and you are familiar with (built-in language features, code you already wrote, ..).
+	This will help you spot where the bugs in your code are (since you already know where not to look).
+	Also don't do the same work twice.
+
+6) Favor readable code over elegant or efficient solutions.
+	Everyone will thank you, including your future self.
+
+
+
+TL;DR - 
+	1) Keep your working memory clear - 
+		Let clear code, good habits, and careful planning do the remembering for you.
+	2) Don't try solving anything you can't hold in your thoughts -
+		If you're doing this, you probably didn't: write clear code, use good habits, or carefully plan
+
+
+
+
+challenge:  how does this apply to solving problems recursively?
