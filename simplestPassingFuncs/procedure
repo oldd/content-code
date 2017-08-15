@@ -1,0 +1,26 @@
+How to use these in your weekly projects?
+follow this procedure:
+
+Procedure:
+	
+	1) write your empty project according to the prompt
+
+	2) fill it in with dummy return values so it 'works'
+
+	3-4) make a separate file for each tricky bit, (addTo, operate, changeSchema).  You will use these files to independantly develop each tricky bit, allowing you to focus on just one piece of the process at a time.  this is where you will apply what was covered in 'enlish2js'
+
+	5) after each bit is finished, reconsolidate into a single finished project
+
+
+Challenge procedure:
+
+	1) write your empty project according to the prompt
+
+	2) fill it in with dummy return values so it 'works'
+
+	3-4) make a separate file for each tricky bit, (addTo, operate, changeSchema).  You will use these files to independantly develop each tricky bit, allowing you to focus on just one piece of the process at a time.  this is where you will apply what was covered in 'enlish2js'
+
+	3-4 challenge) write a couple unit tests for each file and use these to guide your development of each method
+
+	5) copy paste your sub-projects back together for a finished product
+
