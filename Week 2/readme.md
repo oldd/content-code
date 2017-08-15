@@ -1,0 +1,1 @@
+exercises for week 2

@@ -1,0 +1,10 @@
+let's make this thing completely self contained.
+apps need to be nice tidy bundles
+
+|- app.html
+|- controler.js
+|- initialize.js
+|- model.js
+|- tictactoe.css
+|- view.js
+

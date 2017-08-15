@@ -1,0 +1,16 @@
+The model is not very modular.
+the same object is protecting two separate types of data.
+let's make a model for nextPlayer and boardState.
+-  changes in controller.js, initialize, and the models directory -
+
+|- app.html
+|- controler.js
+|- initialize.js
+|- models/
+|	|- boardModel.js
+|	|- playerModel.js
+|- tictactoe.css
+|- view.js
+
+
+this app onwards all have intersting bugs worth tracking down

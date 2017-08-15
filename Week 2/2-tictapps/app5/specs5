@@ -1,0 +1,43 @@
+model:  object
+	properties:  2
+		nextPlayer:  boolean
+			initialized:  true
+			purpose:  keep track of player turns
+		boardState:  array of arrays
+			initialized:  3x3, nulls
+			purpose:  remember the plays made
+	methods:  1
+		updateData:  function
+			args:  3
+				box:  DOM cell from game board
+					purpose:  what does this argument do in this method?
+				boardNow:  this object's own boardState property
+					purpose:
+				playerNow:  this object's own playerState property
+			return:  undefined
+			behavior:  if move is valid, save it to the gameboard and update playerstate.  else alert
+			purpose:  to save player moves and move the game forward
+	purpose:  it's to manipulate and protect the app's data
+
+view:  object
+	properties:  0
+	methods:  1
+		populateBoard:  function
+			args:  1
+				boardNow: array of arrays
+					purpse:  to tell the view what to draw in the DOM 
+			return:  undefined
+			behavior:  take in the boardState and draw it onto the DOM tic tac toe board
+			purpose:  so players can see what they've done
+	purpose:  to manipulate the DOM with fresh data
+
+controller:  object
+	properties:  0
+	methods:  1
+		play: function
+			args: 1
+				box:  DOM cell from the table
+			return:  undefined
+			behavior:  calls model.update with the newest play. then calls view to draw the new board
+			purpose:  when a user clicks the board, the app does the right thing
+	purpose:  handle 'game play'.  it connects to the user interface and provides the right behavior given a user's behavior
