@@ -1,54 +1,36 @@
 //	'context' and 'this':  a big leap
 // 
-// 	'this' is used to dynamically set the context of a variable
-//	('dynamically': based on what is happening while the program runs)
+// 	'this' is used to set the context of a variable
+//		the variable takes the value assigned in the object to the left of the '.' 
+//		if there is nothing to the left of the period it looks to scope
+
+// 	'context' is the study of one variable name
+//		having different values in different execution scenarios
+
+//	almost like scope, but tied to dynamic behavior
+//		rather than source-code blocking	
 
 
-// 	a constructor function for accounts with a self-modifying method
-// 	'this' causes the object's method to refer to it's own value of 'cash'
-// 		it 'sets the context' of cash
-var accountGenerator = function(money) {
-	// identical to the object in 8.js
-	var newAccount = {
-		cash: money,
-		changeCash: function(deltaCash) {
-			this.cash = this.cash + deltaCash;
-		},
-		displayCash: function(){
-			console.log('i has this many monies: ' + this.cash);
-		}
+// simply a function
+function learning() {
+	// scope
+	var variable = 'inner';
+	console.log(variable);
+	// context
+	console.log(this.variable);
+	learning.variable = 'property-func';
+	console.log(this.variable);
+};
+
+// an object with methods
+var variable = 'global';
+var object = {
+	variable: 'property-obj',
+	logit: function() {
+		var variable = 'inner';
+		console.log(variable);
+		console.log(this.variable);
 	};
-	return newAccount;
-}
-
-var accObj = accountGenerator(6)
-console.log(accObj)
-
-
-//----------------------------- //
-var bank = [];
-console.log('\nno accounts in the bank: ' + bank);
-
-for (var i = 0; i < 5; i++) {
-	bank.push(accountGenerator(i+1));
 };
 
-console.log('\naccounts now in the bank: ' + bank);
-
-console.log('\nor ask them directly:');
-for (var i = 0; i < 5; i++) {
-	bank[i].displayCash();
-};
-
-console.log('\ncompound interesting!');
-for (var i = 0; i < 5; i++) {
-	for (var j = 0; j < 10; j++) {
-		bank[i].changeCash(bank[i].cash * 1.5)
-	};	
-};
-console.log('\nor ask them again:');
-for (var i = 0; i < 5; i++) {
-	bank[i].displayCash();
-};
-
-
+// play around with these

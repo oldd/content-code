@@ -1,30 +1,49 @@
+// 	a factory function for true OOP accounts
+// 	'this' causes the object's method to refer to it's own value of 'cash'
+// 		it 'sets the context' of cash
 
-//__________---------____----_______-----____--_----___-//          needs to be classes
-
-//	official javascript syntax for constructor functions  
-// 	not a big leap - nothing has changed from 10.js but the syntax
-
-// creates the same object as in 10.js 	
-var OGaccount = function(money = 0) {
-	this.cash = money;
-	this.changeCash = function(deltaCash) {
+var accountGenerator = function(money) {
+	// identical to the object in 8.js
+	var newAccount = {
+		cash: money,
+		changeCash: function(deltaCash) {
 			this.cash = this.cash + deltaCash;
-		};
-	this.displayCash = function(){
+		},
+		displayCash: function(){
 			console.log('i has this many monies: ' + this.cash);
-		};
-};
+		}
+	};
+	return newAccount;
+}
 
-var accObj = new OGaccount();
+var accObj = accountGenerator(6)
 console.log(accObj)
 
-// ---------------------------------- //
 
-var accObj = new OGaccount(6);
-console.log(accObj)
-accObj.displayCash();
-accObj.changeCash(7);
-accObj.displayCash();
+// ----------------------------- //
+// var bank = [];
+// console.log('\nno accounts in the bank: ' + bank);
+
+// for (var i = 0; i < 5; i++) {
+// 	bank.push(accountGenerator(i+1));
+// };
+
+// console.log('\naccounts now in the bank: ' + bank);
+
+// console.log('\nor ask them directly:');
+// for (var i = 0; i < 5; i++) {
+// 	bank[i].displayCash();
+// };
+
+// console.log('\ncompound interesting!');
+// for (var i = 0; i < 5; i++) {
+// 	for (var j = 0; j < 10; j++) {
+// 		bank[i].changeCash(bank[i].cash * 1.5)
+// 	};	
+// };
+// console.log('\nor ask them again:');
+// for (var i = 0; i < 5; i++) {
+// 	bank[i].displayCash();
+// };
 
 
-// (slight) challenge:  give the constructor a default value for money

@@ -1,5 +1,6 @@
 // A self-contained bank account!
 // with methods that modify the object itself
+//   TRUE OOP
 
 
 // trust the 'this' 

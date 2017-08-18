@@ -1,4 +1,4 @@
-//  with a REAL function, the first big leap
+//  with a PURE FUNCTION, the first big leap
 //  
 //	pure functions: 
 //		- do not modify anything in the global scope
@@ -16,12 +16,13 @@ var accObj0 = {cash: 0};
 
 // takes positive or negative number and the account to modify
 // it will return a new, updated account object
-var changeCash = function(money, oldAccount) {
+function changeCash(money, oldAccount) {
 	var newAccount = {};
 	// assigning a value to a non-existent key will add the property
 	newAccount.cash = oldAccount.cash + money;
 	return newAccount;
 };
+
 
 // -------------------------------- //
 console.log(accObj0.cash);

@@ -5,7 +5,7 @@
 var accObj0 = {cash: 0};
 
 // now has default account creation
-var changeCash = function(money, oldAccount) {
+function changeCash(money, oldAccount) {
 	var newAccount = {cash: 0};
 	// checks to see if oldAccount was passed in
 	if (oldAccount == undefined) {
@@ -17,14 +17,20 @@ var changeCash = function(money, oldAccount) {
 	return newAccount;
 };
 
+
 // --------------------------- //
 
-var newAccObj = changeCash(6);
-console.log(newAccObj);
+var newAccObj1 = changeCash(6);
+console.log(newAccObj1);
 
-newAccObj = changeCash(-3, newAccObj);
-console.log(newAccObj);
+newAccObj1 = changeCash(-3, newAccObj1);
+console.log(newAccObj1);
 
+var newAccObj2 = changeCash(6);
+console.log(newAccObj2);
+
+newAccObj2 = changeCash(-3, newAccObj1);
+console.log(newAccObj2);
 
 
 
