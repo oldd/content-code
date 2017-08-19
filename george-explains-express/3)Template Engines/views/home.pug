@@ -1,0 +1,7 @@
+include includes/head.pug
+h1 Welcome to Pug Page
+if showTitle
+	h2 #{title}
+p another template engine we can use!
+each lang, i in languages
+	li #{lang}
