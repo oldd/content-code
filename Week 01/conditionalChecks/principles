@@ -1,0 +1,52 @@
+When setting up a series of conditional checks, it is best to structure them according to the logical relationships between the conditions you are checking for.
+
+Why do all this extra trouble?
+	efficiency:
+		- if done correctly, your conditionals should never have to check the same condition twice
+	readability:
+		- if done correctly, you will arrive at one of the simplest and most readable arrangements of conditional checks
+	debugging and maintaining:
+ 		- readable code is fixable code
+ 		- when each condition is only checked in one place, it is easier to make sure you've corrected all bugs
+
+The 3 classifications to consider are these:
+	1) Mutually Exclusive
+		- the two conditions cannot be true at the same time
+		ex) you are dead. you are alive. you never existed.
+	2) Logical Dependancy
+		- the two conditions are related.  knowledge of one condition provides information about the other condition
+		ex) you woke up on time for class.  you are dead.
+	3) Locigally Independant
+		- the two conditions are unrelated.  knowledge of one condition provides no information on the other condition
+		ex) you woke up on time for class.  i am dead.
+
+Each classification calls for a different conditional check:
+	1) Mutally Exclusive  -  'if'/'else'/'else if' information
+		if (you never existed) {
+			never mind
+		} else if (you're dead) {
+			hold funeral
+		} else {
+			invite to dinner
+		}
+	2) Logically Dependant  -  nested if statements
+		if (is dead) {
+			if (woke up for class) {
+				all good
+			} else {
+				call their phone
+			}
+		} else {
+			hold funeral
+		}
+	3) Logically Independant  -  sequential if statements
+		if (you woke up) {
+			all good
+		} else {
+			call your phone
+		}
+		if (i'm dead) {
+			hold funeral
+		} else {
+			be disappointed
+		}
