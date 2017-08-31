@@ -23,7 +23,7 @@ class OGaccountClass1 {
 	}
 };
 
-// a puppy class and its api ---
+// a puppy class and its specs ---
 // class puppy:
 	// a class to produce basic puppies
 // properties:

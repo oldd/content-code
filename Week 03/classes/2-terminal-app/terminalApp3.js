@@ -219,3 +219,7 @@ var brcn = new BrowserController(mod, brvw)
 var runnin = function() {
   brcn.browse(document.getElementById("first").value, document.getElementById("second").value, document.getElementById("third").value);
 };
+
+
+// --------- challenge ------------- //
+// extend the view and controller so this will run in the browser

@@ -1,7 +1,5 @@
 /*
 	a series on Class syntax.
-	Classes are no different from the constructor functions in Banksy EXCEPT for the syntax 
-		and a few other nice features
 
 	Classes as constructor functions 
 		1: super simple first example
@@ -23,6 +21,3 @@
 		12: available to the class, not it's children
 
 */
-
-
-// add a lookup chain diagram
