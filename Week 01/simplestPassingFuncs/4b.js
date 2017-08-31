@@ -1,4 +1,4 @@
-//  develope 'operate' progressively in this file.
+//  develop 'operate' progressively in this file.
 
 var schemaCalc = {
 	operations: {
