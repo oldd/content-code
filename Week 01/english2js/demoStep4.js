@@ -6,4 +6,7 @@
 [not a word -> "leave me alone"]
 [is a word -> t/f]
 
+[is a palindrome -> true]
+[is not a palindrome -> false]
+
 */
