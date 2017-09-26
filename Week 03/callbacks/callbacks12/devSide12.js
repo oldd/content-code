@@ -32,7 +32,8 @@ module91: object
 					purpose: to be added together
 				cb: function
 					purpose: to be executed with an error and the result
-			return: undefined - uses callback
+			return: undefined - sort of.  
+					what would be the return value becomes the second argument in the callback
 			behavior: checks args types. if they're not numbers, set err to true
 						else do the math. then calls cb with err and result
 			purpose:  an addition module
