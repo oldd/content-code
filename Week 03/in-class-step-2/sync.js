@@ -14,8 +14,8 @@ var sync_model = {
 }
 
 var new_thing_to_save = {samuel: 'hungry'};
-var samuel_id = sync_model.create(new_thing_to_save);
 
+var samuel_id = sync_model.create(new_thing_to_save);
 var samuel = sync_model.read(samuel_id);
 
 console.log(samuel);
