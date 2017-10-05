@@ -34,15 +34,21 @@ var handler = {
 
 var controller = {
     add: function(a, b) {
-        var lastResult = model.lastResult;
+        var lastResult = model.getlastResult();
         var result = logic.add(a, b, lastResult);
-        model.lastResult = result;
+        model.setLastResult(result);
         view.render(result);
     }
 };
 
 var model = {
-    lastResult: 0000
+    lastResult: 0000,
+    setLastResult: function(new_last_result) {
+        this.lastResult = new_last_result;
+    },
+    getLastResult: function() {
+        return this.lastResult;
+    },
 };
 
 var logic = {
