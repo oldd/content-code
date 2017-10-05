@@ -53,6 +53,52 @@ var controller = {
     			});
     		};
     	});
+    },
+    otherAdd: function(a, b) {
+        model.getLastResult((err, result) => {
+            if (!err) {
+                logic.add(a, b, result, (err, result) => {
+                    if (!err) {                        
+                        model.setLastResult(result, (err, result) => {
+                            if (!err) {
+                                view.render(result);
+                            } else {
+                                console.log(err);
+                            };
+                        });
+                    } else {}
+                        console.log(err);
+                    };
+                });
+            } else {
+                console.log(err);
+            };
+        });
+    },
+    otherOtherAdd: function(a, b) {
+        
+        model.getLastResult(cb1);
+        var cb1 = (err, result) => {
+            if (err) {
+                console.log(err);
+            } else {
+                logic.add(a, b, result, cb2);
+            };
+        };
+        var cb2 = (err, result) => {
+                    if (err) {
+                        console.log(err);
+                    } else {
+                        model.setLastResult(result, cb3);
+                    };
+                };
+        var cb3 = (err, result) => {
+                            if (err) {
+                                console.log(err);
+                            } else {
+                                view.render(result);
+                            };
+                        };
     }
 };
 
