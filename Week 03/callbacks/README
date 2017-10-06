@@ -16,6 +16,7 @@ you've heard node is asynchronous:
 	but executed at their leisure
 so: 
 	console.log the result after doing the math
-	rerender home page AFTER new data is added
-
+	rerender home page AFTER new data is added  
+  
+[a good article](http://blog.gvm-it.eu/post/22040726249/callback-conventions-in-nodejs-how-and-why)  
 	
