@@ -24,7 +24,7 @@ var handler = {
         } else {
             b = Number(pre_b);
         }
-
+ 
         controller.add(a, b);
 
         document.getElementById("number1").innerHTML = null;

@@ -76,7 +76,6 @@ var controller = {
         });
     },
     otherOtherAdd: function(a, b) {
-        
         model.getLastResult(cb1);
         var cb1 = (err, result) => {
             if (err) {
