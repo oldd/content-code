@@ -1,0 +1,13 @@
+recommended reads
+	0-middleware-series
+		everything you need to know for cleancalc 4
+	0-debug-these
+		a lot of common errors. 
+		run them, read them, take notes on them
+	1-calc-series
+		explore express app design through these progressive examples
+	1-beaver-series-crud-sprints
+		practice building crud one feature at a time.
+		each subfolder is the same idea in a more complicated app structure
+	1-simply-cruddy-to-read
+		explore RESTFUL routing

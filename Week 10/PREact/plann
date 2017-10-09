@@ -1,0 +1,27 @@
+------ a dynamic calc ---------
+1: learn some lodash, learn some promises
+2: write a model class that uses lodash
+	_.times
+	_.map - for schema validatin
+	_.cloneDeep - for mod.add, get?
+	_.assign
+	_.omit - for mod.delete
+	_.pick - for using schema fallback
+3: make the model a module
+4: make a little console mvc schemadcalc that uses your model. controller uses promises
+5: extend the view to do dom, the controller to pull args from dom
+6: learn what babel does
+7: build an app to babel-compile your es6 app and statically serve it with the html
+
+
+it'll:
+	have 4 ops passed in at initiation
+	have 2 arg slots in html
+	have a button for each operation in html
+		exteded controller.doMath
+	draw the result to the screen
+		exteded view.render
+
+a little project to practice some skills you'll want for react
+
+see googlecal event
