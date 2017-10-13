@@ -57,4 +57,9 @@ Each classification calls for a differently structured conditional check:
 	} else {
 		be disappointed
 	};
-	```
+	```  
+	  
+___  
+### Resources  
+  
+https://revelry.co/coding-without-if-statements/  
