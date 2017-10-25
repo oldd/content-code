@@ -32,6 +32,7 @@ var app = {
 	},
 	read_local: function() {
 		app.render_display(app.local_state);
+		// comment so the method collapses
 	},
 	update_local: function() {
 		var text_input = document.getElementById('text_input');
@@ -41,18 +42,10 @@ var app = {
 	initialize: function() {
 		console.log('hi');		
 		this.api_connection = axios.create({
-		  baseURL: 'http://localhost:3001'
+			baseURL: 'http://localhost:3001'
 		});
 		this.render_input();
-		this.api_connection.get('/get') // axios call to get the data
-			.then((response) => {
-				this.render_display(response.data);
-			})
-			.catch((error) => {
-				if(error) {	
-					console.log(error);
-				}
-			});
+		this.read_api();
 	},
 	render_display: function (state_object) {
 		var display_component = document.getElementById('display_component');
@@ -115,9 +108,11 @@ var app = {
 			container.appendChild(input_component);
 
 		};
-
 	}
 };
+
+
+/// I AM REACT
 
 
 
