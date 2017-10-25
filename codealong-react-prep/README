@@ -1,6 +1,6 @@
 Fancy Fancy Time
     local/global state
-    reusable components
+    reusable dom components
     logic in the frontend
     restful api backend
     cors
