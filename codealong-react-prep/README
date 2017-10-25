@@ -6,3 +6,5 @@ Fancy Fancy Time
     cors
     service based architecture
     an app is a user experience, not a port
+
+this app avoides the most complicated aspects of context in front-end apps
