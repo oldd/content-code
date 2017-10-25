@@ -1,6 +1,6 @@
 Fancy Fancy Time
     local/global state
-    reusable components
+    reusable dom components
     logic in the frontend
     restful api backend
     cors
@@ -9,6 +9,7 @@ Fancy Fancy Time
 
 this app avoides the most complicated aspects of context in front-end apps
 
-challenges
+
+challenge
     create a 'state_component' that stores a value in a 'state' attribute
         it will display its state value
