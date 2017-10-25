@@ -6,6 +6,7 @@ var app = {
 	api_connection: {},
 	local_state: 'local state',
 	// react doesn't provide you these methods
+	//	controller and routes
 	read_api: function() {
 		app.api_connection.get('/get') // axios call to get the data
 			.then((response) => {
@@ -41,6 +42,7 @@ var app = {
 		app.local_state = new_state;		
 	},
 	// react does these things
+	//	view stuff
 	initialize: function() {
 		console.log('hi');		
 		this.api_connection = axios.create({

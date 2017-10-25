@@ -9,6 +9,8 @@ Fancy Fancy Time
 
 this app avoides the most complicated aspects of context in front-end apps
 
+also isn't mvvm
+
 services/static_app/public/scripts/front_end_app is the stand-in for a REACT app (bundle.js)
 
 challenge
