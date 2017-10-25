@@ -2,9 +2,9 @@ var routes = require('./routes');
 var auth = require('./auth');
 
 var express = require('express');
-var api = express.Router();
+var data_api = express.Router();
 
-api.use(auth);
-api.use(routes);
+data_api.use(auth);
+data_api.use(routes);
 
-module.exports = api;
+module.exports = data_api;

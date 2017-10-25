@@ -5,10 +5,11 @@
 var app = {
 	api_connection: {},
 	local_state: 'local state',
+	// react doesn't provide you these methods
 	read_api: function() {
 		app.api_connection.get('/get') // axios call to get the data
 			.then((response) => {
-				app.render_display(response.data);
+				app.render_display(response.data); // rerender dom with new data
 			})
 			.catch((error) => {
 				if(error) {	
@@ -39,6 +40,7 @@ var app = {
 		var new_state = text_input.value;
 		app.local_state = new_state;		
 	},
+	// react does these things
 	initialize: function() {
 		console.log('hi');		
 		this.api_connection = axios.create({

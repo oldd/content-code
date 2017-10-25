@@ -9,7 +9,7 @@ Fancy Fancy Time
 
 this app avoides the most complicated aspects of context in front-end apps
 
-services/static_app/public/scripts/front_end_app is the stand-in for a REACT app
+services/static_app/public/scripts/front_end_app is the stand-in for a REACT app (bundle.js)
 
 challenge
     create a 'state_component' that stores a value in a 'state' attribute

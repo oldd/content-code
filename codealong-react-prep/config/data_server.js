@@ -1,10 +1,7 @@
 var express = require('express');
 var app = express();
-var cors = require('cors');
 
 // cross origin resource sharing
-app.use(cors());
-
 app.use(function(req, res, next){
   res.set('Access-Control-Allow-Origin' , 'http://localhost:3000');
   next();
