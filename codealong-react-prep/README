@@ -8,3 +8,7 @@ Fancy Fancy Time
     an app is a user experience, not a port
 
 this app avoides the most complicated aspects of context in front-end apps
+
+challenges
+    create a 'state_component' that stores a value in a 'state' attribute
+        it will display its state value
